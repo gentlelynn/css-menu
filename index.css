@@ -2,10 +2,10 @@
     position: absolute;
     bottom: 100px;
     left: 50%;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     transform: translateX(-50%);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #bottom-positioner {
     position: absolute;
@@ -14,7 +14,6 @@
     width: 50px;
     height: 50px;
     transform: translate(-50%, -50%);
-    /* transition: all 1s ease; */
     /* background-color: red; */
 }
 #bottom-positioner:hover {
@@ -39,61 +38,80 @@
 	line-height: 50px;
 	color: #fff;
 	font-size: 1.4rem;
-	transition: transform 2s;
+	transition: transform 0.5s;
 	z-index: 2;
 }
 #bottom-positioner:hover > #button .apb {   
 	background-color: green;
-	top: 45%;
-    left: 45%;
+	top: 40%;
+    left: 40%;
 	transform: scale(2);
+	cursor: pointer;
 }
-/* .icon:hover{
-	transform: scale(2);
-	background-color: green;
-} */
 
+#control-ring-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 /* 设置按钮展开之后的样式 */
 ul{
 	list-style: none;
 	position: absolute;
 	opacity: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	/* transform: translate(20px,20px); */
+	/* transition:all 4s ease-in 0s; */
 	/* transform: scale(0);
 	transition: transform 2s; */
+	/* transition:all 4s 0s; */
 }
 
-#bottom-positioner:hover ul .button{
+/* #bottom-positioner:hover ul .button{
 	transform: scale(1);
     opacity: 1;
-}
+} */
 
 ul .button{
+	position: absolute;
 	width: 50px;
 	height: 50px;
-	position: absolute;
 	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
 	background-color: #000;
-	top: -16px;
-	left: 0;
+	cursor: pointer;
+	/* transform: translate(0,0); */
+	transition:all 1s 0s;
 	/* transform: scale(0);
     
     transition: all 1s ease; */
 }
 
 #bottom-positioner:hover ul li:nth-child(1){
-	transform: translate(130px, 160px);
+	transform: translate(-110px, -80px);
+	opacity: 1;
 }
 #bottom-positioner:hover ul li:nth-child(2){
-	transform: translate(120px, 230px);
+	transform: translate(-120px, -10px);
+	opacity: 1;
 }
 #bottom-positioner:hover ul li:nth-child(3){
-	transform: translate(155px, 285px);
+	transform: translate(-75px, 45px);
+	opacity: 1;
 }
 #bottom-positioner:hover ul li:nth-child(4){
-	transform: translate(210px, 320px);
+	transform: translate(-10px, 60px);
+	opacity: 1;
 }
 #bottom-positioner:hover ul li:nth-child(5){
-	transform: translate(275px, 305px);
+	transform: translate(45px, 25px);
+	opacity: 1;
 }
 
 .mask:hover{
