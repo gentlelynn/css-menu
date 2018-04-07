@@ -1,0 +1,113 @@
+#at-plus-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translateX(-50%);
+    border: 1px solid red;
+}
+#bottom-positioner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    /* transition: all 1s ease; */
+    /* background-color: red; */
+}
+#bottom-positioner:hover {
+    width: 100%;
+    height: 100%;
+}
+
+#bottom-positioner:hover > #button {
+    width: 100%;
+    height: 100%;
+}
+.apb{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eee;	
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 1.4rem;
+	transition: transform 2s;
+	z-index: 2;
+}
+#bottom-positioner:hover > #button .apb {   
+	background-color: green;
+	top: 45%;
+    left: 45%;
+	transform: scale(2);
+}
+/* .icon:hover{
+	transform: scale(2);
+	background-color: green;
+} */
+
+/* 设置按钮展开之后的样式 */
+ul{
+	list-style: none;
+	position: absolute;
+	opacity: 1;
+	/* transform: scale(0);
+	transition: transform 2s; */
+}
+
+#bottom-positioner:hover ul .button{
+	transform: scale(1);
+    opacity: 1;
+}
+
+ul .button{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #000;
+	top: -16px;
+	left: 0;
+	/* transform: scale(0);
+    
+    transition: all 1s ease; */
+}
+
+#bottom-positioner:hover ul li:nth-child(1){
+	transform: translate(130px, 160px);
+}
+#bottom-positioner:hover ul li:nth-child(2){
+	transform: translate(120px, 230px);
+}
+#bottom-positioner:hover ul li:nth-child(3){
+	transform: translate(155px, 285px);
+}
+#bottom-positioner:hover ul li:nth-child(4){
+	transform: translate(210px, 320px);
+}
+#bottom-positioner:hover ul li:nth-child(5){
+	transform: translate(275px, 305px);
+}
+
+.mask:hover{
+	background-color: red;
+}
+.history:hover{
+	background-color: yellow;
+}
+.message:hover{
+	background-color: blue;
+}
+.setting:hover{
+	background-color: orange;
+}
+.sign:hover{
+	background-color: purple;
+}
